@@ -19,6 +19,7 @@
             fix.Put(entry1, 20, 30);
             fix.Put(button1, 200, 30);
             Add(fix);
+
             button1.Clicked += (s, e) =>
             {
                 var messageDialog = new MessageDialog(this, DialogFlags.Modal, MessageType.Info, ButtonsType.YesNo, button1.Label);
