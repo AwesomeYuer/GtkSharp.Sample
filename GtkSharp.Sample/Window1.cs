@@ -36,6 +36,7 @@
             { 
                 Application.Quit();
             };
+
             ShowAll();
         }
     }
