@@ -22,7 +22,14 @@
 
             button1.Clicked += (s, e) =>
             {
-                var messageDialog = new MessageDialog(this, DialogFlags.Modal, MessageType.Info, ButtonsType.YesNo, button1.Label);
+                var messageDialog = new MessageDialog
+                                                (
+                                                    this
+                                                    , DialogFlags.Modal
+                                                    , MessageType.Info
+                                                    , ButtonsType.YesNo
+                                                    , button1.Label
+                                                );
                 messageDialog.WidthRequest = 50;
                 messageDialog.HeightRequest = 50;
                 messageDialog.Title = button1.Label;
