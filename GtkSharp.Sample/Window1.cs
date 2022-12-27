@@ -1,35 +1,41 @@
-﻿using Gtk;
-namespace Microshaoft
+﻿namespace Microshaoft
 {
+    using Gtk;
     public class Window1 : Window
     {
         public Window1(string title) : base(WindowType.Toplevel)
         {
             Title = title;
-            var button = new Button()
+            
+            Button button1 = new ("Button");
+            button1.SetSizeRequest(80, 40);
+
+            Entry entry1 = new ()
             {
-                Label = "戳我呀"
-                , Visible = true
-                , WidthRequest = 20
-                , HeightRequest = 20
-            };
-            button.Clicked += (s, e) => 
-            {
-                var md = new MessageDialog(this, DialogFlags.Modal, MessageType.Info, ButtonsType.YesNo, button.Label);
-                md.WidthRequest = 50;
-                md.HeightRequest = 50;
-                md.Title = button.Label;
-                var result = (ResponseType) md.Run();
-                Console.WriteLine(result);
-                md.Destroy();
+                Text = Title
             };
 
-            Add(button);
-            
+            Fixed fix = new ();
+            fix.Put(entry1, 20, 30);
+            fix.Put(button1, 200, 30);
+            Add(fix);
+            button1.Clicked += (s, e) =>
+            {
+                var messageDialog = new MessageDialog(this, DialogFlags.Modal, MessageType.Info, ButtonsType.YesNo, button1.Label);
+                messageDialog.WidthRequest = 50;
+                messageDialog.HeightRequest = 50;
+                messageDialog.Title = button1.Label;
+                messageDialog.Text = entry1.Text;
+                var result = (ResponseType)messageDialog.Run();
+                Console.WriteLine(result);
+                messageDialog.Destroy();
+            };
+
             DeleteEvent += (s, e) =>
             { 
                 Application.Quit();
             };
+            ShowAll();
         }
     }
 }

@@ -2,23 +2,23 @@
 using Microshaoft;
 
 Application.Init();
-var App = new Application("LBH.SerialPortTools", GLib.ApplicationFlags.None);
+var App = new Application("AwesomeYuer", GLib.ApplicationFlags.None);
 App.Register(GLib.Cancellable.Current);
 
 var provider = new CssProvider();
 StyleContext.AddProviderForScreen(Gdk.Screen.Default, provider, 800);
 
-var window1 = new Window1("于斯人也");
+var mainWindow = new Window1("于斯人也AwesomeYuer");
 
-window1.SetSizeRequest(400, 400);
-window1.SetPosition
+mainWindow.SetSizeRequest(400, 400);
+mainWindow.SetPosition
                 (
                     WindowPosition.Center
                 );
 //mainWindow.Maximize();
 
-window1.Show();
-App.AddWindow(window1);
+mainWindow.Show();
+App.AddWindow(mainWindow);
 
 Application.Run();
 Console.WriteLine($"Application.Run() finished!");
