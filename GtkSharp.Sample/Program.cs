@@ -1,24 +1,24 @@
 ﻿using Gtk;
-using LBH.SerialPortTools;
+using Microshaoft;
+
 Application.Init();
 var App = new Application("LBH.SerialPortTools", GLib.ApplicationFlags.None);
 App.Register(GLib.Cancellable.Current);
 
-CssProvider provider = new CssProvider();
-//provider.LoadFromPath("sp.css");
+var provider = new CssProvider();
 StyleContext.AddProviderForScreen(Gdk.Screen.Default, provider, 800);
 
-var mainWindow = new Window1();
+var window1 = new Window1("于斯人也");
 
-//mainWindow.SetSizeRequest(400, 400);
-//mainWindow.SetPosition
-//                (
-//                    WindowPosition.Center
-//                );
+window1.SetSizeRequest(400, 400);
+window1.SetPosition
+                (
+                    WindowPosition.Center
+                );
 //mainWindow.Maximize();
-//mainWindow.SetIconFromFile("logo.png");
-//mainWindow.Show();
-App.AddWindow(mainWindow);
+
+window1.Show();
+App.AddWindow(window1);
 
 Application.Run();
 Console.WriteLine($"Application.Run() finished!");
