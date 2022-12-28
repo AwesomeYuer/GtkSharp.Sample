@@ -34,7 +34,7 @@
                 messageDialog.HeightRequest = 50;
                 messageDialog.Title = button1.Label;
                 messageDialog.Text = entry1.Text;
-                var result = (ResponseType)messageDialog.Run();
+                var result = (ResponseType) messageDialog.Run();
                 Console.WriteLine(result);
                 messageDialog.Destroy();
             };
