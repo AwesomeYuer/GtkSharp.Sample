@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,94 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="mono.samples\**" />
+    <EmbeddedResource Remove="mono.samples\**" />
+    <None Remove="mono.samples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="mono.samples\gtk-gio\MountOperation.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoApplicationWindow.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoAttribute.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoButtonBox.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoClipboard.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoColorSelection.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoCssBasics.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoDialog.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoDrawingArea.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoEditableCells.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoEntryCompletion.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoExpander.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoIconView.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoImages.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoListStore.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoMain.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoMenus.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoPanes.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoPixbuf.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoPrinting.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoRotatedText.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoSizeGroup.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoSpinner.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoStockBrowser.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoTextView.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoThemingStyleClasses.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoTreeStore.cs" />
+    <Compile Include="mono.samples\GtkDemo\DemoUIManager.cs" />
+    <Compile Include="mono.samples\test\TestCheckButton.cs" />
+    <Compile Include="mono.samples\test\TestColorSelection.cs" />
+    <Compile Include="mono.samples\test\TestComboBox.cs" />
+    <Compile Include="mono.samples\test\TestDialog.cs" />
+    <Compile Include="mono.samples\test\TestFlipping.cs" />
+    <Compile Include="mono.samples\test\TestRadioButton.cs" />
+    <Compile Include="mono.samples\test\TestRange.cs" />
+    <Compile Include="mono.samples\test\TestSizeGroup.cs" />
+    <Compile Include="mono.samples\test\TestStatusbar.cs" />
+    <Compile Include="mono.samples\test\WidgetViewer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="mono.samples\GtkDemo\css\css_basics.css" />
+    <Content Include="mono.samples\GtkDemo\css\reset.css" />
+    <Content Include="mono.samples\GtkDemo\images\alphatest.png" />
+    <Content Include="mono.samples\GtkDemo\images\apple-red.png" />
+    <Content Include="mono.samples\GtkDemo\images\background.jpg" />
+    <Content Include="mono.samples\GtkDemo\images\floppybuddy.gif" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-applets.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-calendar.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-foot.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-gimp.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-gmush.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnome-gsame.png" />
+    <Content Include="mono.samples\GtkDemo\images\gnu-keys.png" />
+    <Content Include="mono.samples\GtkDemo\images\gtk-logo-rgb.gif" />
+    <Content Include="mono.samples\GtkDemo\images\MonoIcon.png" />
+    <Content Include="mono.samples\pixmaps\gnome-ccdialog.png" />
+    <Content Include="mono.samples\pixmaps\gnome-color-browser.png" />
+    <Content Include="mono.samples\pixmaps\gnome-gmenu.png" />
+    <Content Include="mono.samples\pixmaps\gnome-mdi.png" />
+    <Content Include="mono.samples\pixmaps\gtk-sharp-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CairoSharp" Version="3.24.24.38" />
     <PackageReference Include="GtkSharp" Version="3.24.24.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="mono.samples\gio\" />
+    <Folder Include="mono.samples\99.Build.Failed\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="mono.samples\gtk-gio\Makefile.am" />
+    <None Include="mono.samples\GtkDemo\Makefile.am" />
+    <None Include="mono.samples\GtkDemo\README" />
+    <None Include="mono.samples\GtkDemo\theming.ui" />
+    <None Include="mono.samples\GtkDemo\TODO" />
+    <None Include="mono.samples\pixmaps\Makefile.am" />
+    <None Include="mono.samples\test\ChangeLog" />
+    <None Include="mono.samples\test\Makefile.am" />
   </ItemGroup>
 
 </Project>
