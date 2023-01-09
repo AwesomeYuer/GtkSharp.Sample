@@ -50,7 +50,7 @@
                             );
 
 
-            var buttonWidth = 300;
+            var buttonWidth = 400;
             var buttonHeight = 30;
             var x0 = 50;
             var y0 = 50;
@@ -80,8 +80,6 @@
                                                 ).ToArray();
 
                     }
-                                            
-                    //if (methodInfo.GetParameters().Length > 0)
                     method.Invoke(null, args);
                 };
 
