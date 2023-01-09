@@ -17,9 +17,9 @@ namespace GtkSharpSamples {
 
 		public static int Main (string[] argv)
 		{
-			Application.Init ();
+			//Application.Init();
 			new SampleAssistant ().ShowAll ();
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 
@@ -76,7 +76,7 @@ namespace GtkSharpSamples {
 		protected override bool OnDeleteEvent (Gdk.Event ev)
 		{
 			Console.WriteLine ("Assistant Destroyed prematurely");
-			Application.Quit ();
+			/* Application.Quit(); */
 			return true;
 		}
 
@@ -119,14 +119,14 @@ namespace GtkSharpSamples {
 		{
 			Console.WriteLine ("Assistant cancelled.");
 			Destroy ();
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 
 		void AssistantClose (object o, EventArgs args)
 		{
 			Console.WriteLine ("Assistant ran to completion.");
 			Destroy ();
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 	}
 }

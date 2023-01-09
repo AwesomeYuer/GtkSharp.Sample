@@ -22,7 +22,7 @@ namespace GtkSamples {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Window win = new Window ("Calendar Tester");
 			win.DefaultWidth = 200;
 			win.DefaultHeight = 150;
@@ -31,7 +31,7 @@ namespace GtkSamples {
 			cal.DaySelected += new EventHandler (DaySelected);
 			win.Add (cal);
 			win.ShowAll ();
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 
@@ -43,7 +43,7 @@ namespace GtkSamples {
 
 		static void Window_Delete (object obj, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 

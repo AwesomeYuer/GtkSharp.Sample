@@ -13,19 +13,19 @@ namespace GtkSamples {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Window win = new Window ("Button Tester");
 			//win.DeleteEvent += new DeleteEventHandler (Quit);
 			Button btn = new MyButton ();
 			win.Add (btn);
 			win.ShowAll ();
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 
 		static void Quit (object sender, DeleteEventArgs args)
 		{
-			Application.Quit();
+			//Application.Quit();
 		}
 	}
 

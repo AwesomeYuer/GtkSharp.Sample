@@ -6,7 +6,7 @@ class CustomScrollableWidgetTest {
 
 	public static int Main (string[] args)
 	{
-		Gtk.Application.Init ();
+		//Gtk.//Application.Init();
 		Window win = new Window ("Custom Scrollable Widget Test");
 		//win.DeleteEvent += new DeleteEventHandler (OnQuit);
 		
@@ -32,13 +32,13 @@ class CustomScrollableWidgetTest {
 		win.DefaultWidth = 200;
 		win.DefaultHeight = 200;
 		win.ShowAll ();
-		Gtk.Application.Run ();
+		//Gtk.//Application.Run();
 		return 0;
 	}
 
 	static void OnQuit (object sender, DeleteEventArgs args)
 	{
-		Gtk.Application.Quit ();
+		//Gtk./* Application.Quit(); */
 	}
 }
 

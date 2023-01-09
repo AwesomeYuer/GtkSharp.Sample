@@ -14,7 +14,7 @@ namespace GtkSamples {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Gtk.Window win = new Gtk.Window ("GException");
 			win.SetIconFromFile ("this.filename.does.not.exist");
 			// Notreached, GException should throw on above call.

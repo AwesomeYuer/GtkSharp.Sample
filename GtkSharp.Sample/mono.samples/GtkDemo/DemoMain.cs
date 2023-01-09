@@ -20,9 +20,9 @@ namespace GtkDemo
 
 		public static void Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			new DemoMain ();
-			Application.Run ();
+			//Application.Run();
 		}
 
 		public DemoMain ()
@@ -252,7 +252,7 @@ namespace GtkDemo
 
 		private void WindowDelete (object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 	}

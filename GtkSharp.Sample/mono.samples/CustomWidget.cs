@@ -5,7 +5,7 @@ using System;
 class CustomWidgetTest {
 	public static int Main (string[] args)
 	{
-		Gtk.Application.Init ();
+		//Gtk.//Application.Init();
 		Window win = new Window ("Custom Widget Test");
 		//win.DeleteEvent += new DeleteEventHandler (OnQuit);
 		
@@ -30,13 +30,13 @@ class CustomWidgetTest {
 		
 		win.Add (paned);
 		win.ShowAll ();
-		Gtk.Application.Run ();
+		//Gtk.//Application.Run();
 		return 0;
 	}
 
 	static void OnQuit (object sender, DeleteEventArgs args)
 	{
-		Gtk.Application.Quit ();
+		//Gtk./* Application.Quit(); */
 	}
 }
 

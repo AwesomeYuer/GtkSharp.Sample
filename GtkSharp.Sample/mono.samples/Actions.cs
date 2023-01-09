@@ -144,7 +144,7 @@ namespace GtkSamples {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Window win = new Window ("Action Demo");
 			win.DefaultSize = new Gdk.Size (200, 150);
 			//win.DeleteEvent += new DeleteEventHandler (OnWindowDelete);
@@ -183,7 +183,7 @@ namespace GtkSamples {
 			box.PackEnd (vbox, true, true, 0);
 
 			win.ShowAll ();
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 
@@ -286,7 +286,7 @@ namespace GtkSamples {
 		static void OnWindowDelete (object obj, DeleteEventArgs args)
 		{
 			return;
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 		
@@ -321,7 +321,7 @@ namespace GtkSamples {
 
 		static void OnQuit (object obj, EventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 	}
 }

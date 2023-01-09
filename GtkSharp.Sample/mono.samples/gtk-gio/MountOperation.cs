@@ -40,7 +40,7 @@ public class TestMount
 
 	static void Main ()
 	{
-		Gtk.Application.Init ();
+		//Gtk.//Application.Init();
 		file = FileFactory.NewForUri (new Uri ("smb://admin@192.168.42.3/myshare/test"));
 
 		Window w = new Window ("test");
@@ -50,7 +50,7 @@ public class TestMount
 		b.Show ();
 		w.Add (b);
 		w.Show ();
-		Gtk.Application.Run ();
+		//Gtk.//Application.Run();
 	}
 
 	static void HandleButtonClicked (object sender, System.EventArgs args)

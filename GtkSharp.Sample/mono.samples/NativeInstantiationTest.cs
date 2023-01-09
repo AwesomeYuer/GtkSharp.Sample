@@ -18,7 +18,7 @@ namespace GtkSharp {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			GLib.GType gtype = LookupGType (typeof (InstantiationTest));
 			GLib.GType.Register (gtype, typeof (InstantiationTest));
 			Console.WriteLine ("Instantiating using managed constructor");
@@ -28,7 +28,7 @@ namespace GtkSharp {
 			IntPtr handle = g_object_new (gtype.Val, "title", "Unmanaged Instantiation Test", IntPtr.Zero);
 			gtk_widget_show (handle);
 			Console.WriteLine ("Unmanaged Instantiation complete");
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 
@@ -48,7 +48,7 @@ namespace GtkSharp {
 
 		protected override bool OnDeleteEvent (Gdk.Event ev)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			return true;
 		}
 

@@ -474,7 +474,7 @@ public class TestDnd {
 		Button button;
 		Pixbuf drag_icon_pixbuf;
 
-		Gtk.Application.Init ();
+		//Gtk.//Application.Init();
 
 		window = new Gtk.Window (Gtk.WindowType.Toplevel);
 		//window.DeleteEvent += new DeleteEventHandler (OnDelete);
@@ -533,11 +533,11 @@ public class TestDnd {
 
 		window.ShowAll ();
 
-		Gtk.Application.Run ();
+		//Gtk.//Application.Run();
 	}
 
 	private static void OnDelete (object o, DeleteEventArgs e)
 	{
-		Gtk.Application.Quit ();
+		//Gtk./* Application.Quit(); */
 	}
 }

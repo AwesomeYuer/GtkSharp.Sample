@@ -6,13 +6,13 @@ class CairoSample : DrawingArea
 {
 	static void Main ()
 	{
-		Application.Init ();
+		//Application.Init();
 		Window win = new Window ("Cairo with Gtk# 3");
 		win.SetDefaultSize (400, 400);
-		//win.DeleteEvent += delegate { Application.Quit (); };
+		//win.DeleteEvent += delegate { /* Application.Quit(); */ };
 		win.Add (new CairoSample ());
 		win.ShowAll ();
-		Application.Run ();
+		//Application.Run();
 	}
 
 	void OvalPath (Context cr, double xc, double yc, double xr, double yr)

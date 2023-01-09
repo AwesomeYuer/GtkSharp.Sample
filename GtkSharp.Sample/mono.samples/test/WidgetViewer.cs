@@ -20,7 +20,7 @@ namespace WidgetViewer {
 		
 		static void Main ()
 		{
-			Application.Init ();
+			//Application.Init();
 			window = new Window ("Gtk# Widget viewer");
 			//window.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			window.SetDefaultSize (250, 200);
@@ -58,7 +58,7 @@ namespace WidgetViewer {
 			box2.PackStart (close_button, true, true, 0);
 
 			window.ShowAll ();
-			Application.Run ();
+			//Application.Run();
 		}
 
 		static void AddButton (string caption, EventHandler handler)
@@ -77,7 +77,7 @@ namespace WidgetViewer {
 
 		static void Window_Delete (object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 
@@ -90,7 +90,7 @@ namespace WidgetViewer {
 
 		static void Close_Button (object o, EventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 
 		static void Check_Buttons (object o, EventArgs args)

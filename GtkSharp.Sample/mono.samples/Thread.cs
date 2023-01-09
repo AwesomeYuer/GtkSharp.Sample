@@ -20,19 +20,19 @@ namespace GtkSamples {
 		
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello World");
 			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			msg = new Label ("Click to quit");
 			but = new Button (msg);
-			but.Clicked += delegate { thr.Abort (); Application.Quit (); };
+			but.Clicked += delegate { thr.Abort (); /* Application.Quit(); */ };
 			win.Add (but);
 			win.ShowAll ();
 
 			thr = new Thread (ThreadMethod);
 			thr.Start ();
 			
-			Application.Run ();
+			//Application.Run();
 			
 			return 0;
 		}
@@ -51,7 +51,7 @@ namespace GtkSamples {
 		
 		static void Window_Delete (object obj, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 

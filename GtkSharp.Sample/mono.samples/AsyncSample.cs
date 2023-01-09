@@ -35,7 +35,7 @@ namespace Samples
 		
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			main_thread = Thread.CurrentThread;
 
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello Async World");
@@ -51,7 +51,7 @@ namespace Samples
 			win.BorderWidth = 4;
 			win.ShowAll ();
 
-			Application.Run ();
+			//Application.Run();
 			
 			return 0;
 		}
@@ -101,7 +101,7 @@ namespace Samples
 
 		static void Window_Delete (object obj, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 	}

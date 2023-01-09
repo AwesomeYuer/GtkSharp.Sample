@@ -37,18 +37,18 @@ namespace GtkSharp.Samples {
 			win.Add (box);
 			win.ShowAll ();
 
-			Application.Run ();
+			//Application.Run();
 		}
 
 		static void delete_cb (object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			args.RetVal = true;
 		}
 
 		static void exit_cb (object o, EventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 	}
 }

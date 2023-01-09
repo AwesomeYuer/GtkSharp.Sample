@@ -20,7 +20,7 @@ namespace GtkSamples {
 		{
 			DateTime start = DateTime.Now;
 
-			Application.Init ();
+			//Application.Init();
 			
 			PopulateStore ();
 
@@ -47,7 +47,7 @@ namespace GtkSamples {
 			
 			Console.WriteLine (count + " nodes added.");
 			Console.WriteLine ("Startup time: " + DateTime.Now.Subtract (start));
-			Application.Run ();
+			//Application.Run();
 		}
 
 		private static void ProcessType (TreeIter parent, System.Type t)
@@ -94,7 +94,7 @@ namespace GtkSamples {
 
 		private static void DeleteCB (System.Object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 
 		private static void UpdateDialog (string format, params object[] args)
@@ -127,8 +127,8 @@ namespace GtkSamples {
 
 		private static void ResponseCB (object obj, ResponseArgs args)
 		{
-			Application.Quit ();
-			System.Environment.Exit (0);
+			/* Application.Quit(); */
+			//System.Environment.Exit (0);
 		}
 	}
 }

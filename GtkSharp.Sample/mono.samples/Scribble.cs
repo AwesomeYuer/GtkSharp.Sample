@@ -30,16 +30,16 @@ namespace GtkSamples {
 
 		public static int Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Gtk.Window win = new Gtk.Window ("Scribble");
-			//win.DeleteEvent += delegate { Application.Quit (); };
+			//win.DeleteEvent += delegate { /* Application.Quit(); */ };
 			win.BorderWidth = 8;
 			Frame frm = new Frame (null);
 			frm.ShadowType = ShadowType.In;
 			frm.Add (new ScribbleArea ());
 			win.Add (frm);
 			win.ShowAll ();
-			Application.Run ();
+			//Application.Run();
 			return 0;
 		}
 

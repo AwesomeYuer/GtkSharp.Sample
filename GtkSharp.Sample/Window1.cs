@@ -47,7 +47,16 @@
                                     return
                                         methodInfo;
                                 }
-                            );
+                            )
+                        .OrderBy
+                            (
+                                (x) =>
+                                {
+                                    return
+                                        x.DeclaringType.Name;
+                                }
+                            )
+                        .ToArray();
 
 
             var buttonWidth = 400;
@@ -60,7 +69,7 @@
             var i = 0;
             foreach (var method in methodInfos)
             {
-                Button button = new($"Sample({i + 1}): {method.DeclaringType!.FullName}");
+                Button button = new($"Sample({i + 1}): {method.DeclaringType.Name}");
                 button.Clicked += (s, e) =>
                 {
                     object?[]? args = null!;

@@ -46,7 +46,7 @@ namespace GtkSamples {
 		
 		public static void Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 
 			PopulateStore ();
 
@@ -67,12 +67,12 @@ namespace GtkSamples {
 			sw.Add (tv);
 			win.ShowAll ();
 
-			Application.Run ();
+			//Application.Run();
 		}
 
 		private static void DeleteCB (System.Object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 	}
 }

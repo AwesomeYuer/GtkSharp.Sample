@@ -193,7 +193,7 @@ class Test {
 		uint r;
 		double theta;
 
-		Application.Init ();
+		//Application.Init();
 
 		Gtk.Window win = new Gtk.Window ("Polar Coordinate Container");
 		//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
@@ -236,12 +236,12 @@ class Test {
 
 		win.ShowAll ();
 
-		Application.Run ();
+		//Application.Run();
 	}
 
 	static void Window_Delete (object obj, DeleteEventArgs args)
 	{
-		Application.Quit ();
+		/* Application.Quit(); */
 		args.RetVal = true;
 	}
 }

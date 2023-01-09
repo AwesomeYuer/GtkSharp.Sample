@@ -77,9 +77,9 @@ public class Driver : Gtk.Window
 {
 	public static void Main ()
 	{
-		Gtk.Application.Init ();
+		//Gtk.//Application.Init();
 		new Driver ();
-		Gtk.Application.Run ();
+		//Gtk.//Application.Run();
 	}
 
 	ListStore liststore;
@@ -127,7 +127,7 @@ public class Driver : Gtk.Window
 
 	void window_delete (object obj, DeleteEventArgs args)
 	{
-		Gtk.Application.Quit ();
+		//Gtk./* Application.Quit(); */
 		args.RetVal = true;
 	}
 }

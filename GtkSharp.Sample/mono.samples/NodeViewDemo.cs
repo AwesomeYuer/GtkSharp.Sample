@@ -111,17 +111,17 @@ namespace GtkSamples {
 		public static void Main (string[] args)
 		{
 			DateTime start = DateTime.Now;
-			Application.Init ();
+			//Application.Init();
 			Gtk.Window win = new NodeViewDemo ();	
 			win.ShowAll ();
 			Console.WriteLine (DemoTreeNode.Count + " nodes created.");
 			Console.WriteLine ("startup time: " + DateTime.Now.Subtract (start));
-			Application.Run ();
+			//Application.Run();
 		}
 
 		void DeleteCB (System.Object o, DeleteEventArgs args)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 		}
 
 	}
@@ -158,8 +158,8 @@ namespace GtkSamples {
 
 		private static void ResponseCB (object obj, ResponseArgs args)
 		{
-			Application.Quit ();
-			System.Environment.Exit (0);
+			/* Application.Quit(); */
+			//System.Environment.Exit (0);
 		}
 	}
 }

@@ -43,16 +43,16 @@ namespace GtkSamples {
 
 		protected override bool OnDeleteEvent (Gdk.Event ev)
 		{
-			Application.Quit ();
+			/* Application.Quit(); */
 			return true;
 		}
 
 		public static void Main (string[] args)
 		{
-			Application.Init ();
+			//Application.Init();
 			Gtk.Window win = new TreeModelDemo ();	
 			win.Show ();
-			Application.Run ();
+			//Application.Run();
 		}
 
 	}

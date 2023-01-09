@@ -12,7 +12,7 @@ namespace TestGio
 				return;
 			}
 			GLib.GType.Init ();
-//			Gtk.Application.Init ();
+//			//Gtk.//Application.Init();
 			Console.WriteLine ("Default Handler for {0}: {1}", args[0], AppInfoAdapter.GetDefaultForType (args[0], false).Name);
 			Console.WriteLine();
 			Console.WriteLine("List of all {0} handlers", args[0]);
