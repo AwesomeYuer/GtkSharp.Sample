@@ -39,7 +39,7 @@ namespace Samples
 			main_thread = Thread.CurrentThread;
 
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello Async World");
-			win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			label = new Label ("Doing nothing");
 			msg = new Label ("Do Work");
 			button = new Button (msg);

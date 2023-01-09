@@ -196,7 +196,7 @@ class Test {
 		Application.Init ();
 
 		Gtk.Window win = new Gtk.Window ("Polar Coordinate Container");
-		win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+		//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 
 		Notebook notebook = new Notebook ();
 		win.Add (notebook);

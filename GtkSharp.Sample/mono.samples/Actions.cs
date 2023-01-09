@@ -147,7 +147,7 @@ namespace GtkSamples {
 			Application.Init ();
 			Window win = new Window ("Action Demo");
 			win.DefaultSize = new Gdk.Size (200, 150);
-			win.DeleteEvent += new DeleteEventHandler (OnWindowDelete);
+			//win.DeleteEvent += new DeleteEventHandler (OnWindowDelete);
 			
 			box = new VBox (false, 0);
 			win.Add (box);
@@ -285,6 +285,7 @@ namespace GtkSamples {
 
 		static void OnWindowDelete (object obj, DeleteEventArgs args)
 		{
+			return;
 			Application.Quit ();
 			args.RetVal = true;
 		}

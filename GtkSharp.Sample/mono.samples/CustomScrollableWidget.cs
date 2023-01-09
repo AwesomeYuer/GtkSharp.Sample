@@ -8,7 +8,7 @@ class CustomScrollableWidgetTest {
 	{
 		Gtk.Application.Init ();
 		Window win = new Window ("Custom Scrollable Widget Test");
-		win.DeleteEvent += new DeleteEventHandler (OnQuit);
+		//win.DeleteEvent += new DeleteEventHandler (OnQuit);
 		
 		VPaned paned = new VPaned ();
 		

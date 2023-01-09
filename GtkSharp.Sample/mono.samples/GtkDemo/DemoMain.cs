@@ -30,7 +30,7 @@ namespace GtkDemo
 			SetupDefaultIcon ();
 		   	window = new Gtk.Window ("Gtk# Code Demos");
 		   	window.SetDefaultSize (600, 400);
-			window.DeleteEvent += new DeleteEventHandler (WindowDelete);
+			//window.DeleteEvent += new DeleteEventHandler (WindowDelete);
 
 			HBox hbox = new HBox (false, 0);
 			window.Add (hbox);

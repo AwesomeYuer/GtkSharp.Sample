@@ -25,7 +25,7 @@ namespace GtkSamples {
 			PopulateStore ();
 
 			Window win = new Window ("TreeView demo");
-			win.DeleteEvent += new DeleteEventHandler (DeleteCB);
+			//win.DeleteEvent += new DeleteEventHandler (DeleteCB);
 			win.SetDefaultSize (640,480);
 
 			ScrolledWindow sw = new ScrolledWindow ();
@@ -87,7 +87,7 @@ namespace GtkSamples {
 			}
 		}
 
-		public static void Main1 (string[] args)
+		public static void Main (string[] args)
 		{
 			new TreeViewDemo ();	
 		}

@@ -51,7 +51,7 @@ namespace GtkSamples {
 			PopulateStore ();
 
 			Window win = new Window ("TreeView demo");
-			win.DeleteEvent += new DeleteEventHandler (DeleteCB);
+			//win.DeleteEvent += new DeleteEventHandler (DeleteCB);
 			win.DefaultWidth = 320;
 			win.DefaultHeight = 480;
 

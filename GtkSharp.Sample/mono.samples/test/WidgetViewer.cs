@@ -22,7 +22,7 @@ namespace WidgetViewer {
 		{
 			Application.Init ();
 			window = new Window ("Gtk# Widget viewer");
-			window.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//window.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			window.SetDefaultSize (250, 200);
 			
 			VBox box1 = new VBox (false, 0);

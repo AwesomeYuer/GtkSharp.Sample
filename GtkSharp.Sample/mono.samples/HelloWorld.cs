@@ -12,11 +12,11 @@ namespace GtkSamples {
 
 	public class HelloWorld  {
 
-		public static int Main1 (string[] args)
+		public static int Main (string[] args)
 		{
 			Application.Init ();
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello World");
-			win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			win.ShowAll ();
 			Application.Run ();
 			return 0;

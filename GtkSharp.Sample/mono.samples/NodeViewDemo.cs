@@ -44,7 +44,7 @@ namespace GtkSamples {
 		
 		public NodeViewDemo () : base ("NodeView demo")
 		{
-			DeleteEvent += new DeleteEventHandler (DeleteCB);
+			//DeleteEvent += new DeleteEventHandler (DeleteCB);
 			DefaultSize = new Gdk.Size (640,480);
 
 			ScrolledWindow sw = new ScrolledWindow ();

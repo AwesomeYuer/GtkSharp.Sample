@@ -15,7 +15,7 @@ namespace GtkSamples {
 		{
 			Application.Init ();
 			Window win = new Window ("Button Tester");
-			win.DeleteEvent += new DeleteEventHandler (Quit);
+			//win.DeleteEvent += new DeleteEventHandler (Quit);
 			Button btn = new MyButton ();
 			win.Add (btn);
 			win.ShowAll ();

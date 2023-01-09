@@ -15,7 +15,7 @@ namespace GtkSharp.Samples {
 		{
 			Application.Init();
 			Window win = new Window ("Menu Sample App");
-			win.DeleteEvent += new DeleteEventHandler (delete_cb);
+			//win.DeleteEvent += new DeleteEventHandler (delete_cb);
 			win.DefaultWidth = 200;
 			win.DefaultHeight = 150;
 

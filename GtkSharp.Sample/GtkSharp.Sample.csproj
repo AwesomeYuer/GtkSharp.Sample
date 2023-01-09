@@ -14,6 +14,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="mono.samples\Actions.cs" />
+    <Compile Include="mono.samples\Assistant.cs" />
+    <Compile Include="mono.samples\AsyncSample.cs" />
+    <Compile Include="mono.samples\ButtonApp.cs" />
+    <Compile Include="mono.samples\CairoPng.cs" />
+    <Compile Include="mono.samples\CairoSample.cs" />
+    <Compile Include="mono.samples\CalendarApp.cs" />
+    <Compile Include="mono.samples\CustomCellRenderer.cs" />
+    <Compile Include="mono.samples\CustomScrollableWidget.cs" />
+    <Compile Include="mono.samples\CustomWidget.cs" />
+    <Compile Include="mono.samples\GExceptionTest.cs" />
+    <Compile Include="mono.samples\gio\AppInfo.cs" />
+    <Compile Include="mono.samples\gio\Volume.cs" />
     <Compile Include="mono.samples\gtk-gio\MountOperation.cs" />
     <Compile Include="mono.samples\GtkDemo\DemoApplicationWindow.cs" />
     <Compile Include="mono.samples\GtkDemo\DemoAttribute.cs" />
@@ -42,6 +55,17 @@
     <Compile Include="mono.samples\GtkDemo\DemoThemingStyleClasses.cs" />
     <Compile Include="mono.samples\GtkDemo\DemoTreeStore.cs" />
     <Compile Include="mono.samples\GtkDemo\DemoUIManager.cs" />
+    <Compile Include="mono.samples\HelloWorld.cs" />
+    <Compile Include="mono.samples\ManagedTreeViewDemo.cs" />
+    <Compile Include="mono.samples\Menu.cs" />
+    <Compile Include="mono.samples\NativeInstantiationTest.cs" />
+    <Compile Include="mono.samples\NodeViewDemo.cs" />
+    <Compile Include="mono.samples\PolarFixed.cs" />
+    <Compile Include="mono.samples\PropertyRegistration.cs" />
+    <Compile Include="mono.samples\Scribble.cs" />
+    <Compile Include="mono.samples\SpawnTests.cs" />
+    <Compile Include="mono.samples\Subclass.cs" />
+    <Compile Include="mono.samples\TestDnd.cs" />
     <Compile Include="mono.samples\test\TestCheckButton.cs" />
     <Compile Include="mono.samples\test\TestColorSelection.cs" />
     <Compile Include="mono.samples\test\TestComboBox.cs" />
@@ -52,6 +76,10 @@
     <Compile Include="mono.samples\test\TestSizeGroup.cs" />
     <Compile Include="mono.samples\test\TestStatusbar.cs" />
     <Compile Include="mono.samples\test\WidgetViewer.cs" />
+    <Compile Include="mono.samples\Thread.cs" />
+    <Compile Include="mono.samples\TreeModelDemo.cs" />
+    <Compile Include="mono.samples\TreeViewDemo.cs" />
+    <Compile Include="mono.samples\VariantDemo.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -83,11 +111,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="mono.samples\gio\" />
     <Folder Include="mono.samples\99.Build.Failed\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="mono.samples\gio\Makefile.am" />
     <None Include="mono.samples\gtk-gio\Makefile.am" />
     <None Include="mono.samples\GtkDemo\Makefile.am" />
     <None Include="mono.samples\GtkDemo\README" />

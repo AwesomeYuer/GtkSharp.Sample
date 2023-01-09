@@ -7,7 +7,7 @@ class CustomWidgetTest {
 	{
 		Gtk.Application.Init ();
 		Window win = new Window ("Custom Widget Test");
-		win.DeleteEvent += new DeleteEventHandler (OnQuit);
+		//win.DeleteEvent += new DeleteEventHandler (OnQuit);
 		
 		VPaned paned = new VPaned ();
 		CustomWidget cw = new CustomWidget ();

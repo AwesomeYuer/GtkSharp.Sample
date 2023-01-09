@@ -87,7 +87,7 @@ public class Driver : Gtk.Window
 	public Driver () : base ("CustomCellRenderer")
 	{
 		DefaultSize = new Size (150, 100);
-		this.DeleteEvent += new DeleteEventHandler (window_delete);
+		//this.DeleteEvent += new DeleteEventHandler (window_delete);
 
 		liststore = new ListStore (typeof (float), typeof (string));
 		liststore.AppendValues (0.5f, "50%");

@@ -17,7 +17,7 @@ namespace GtkSamples {
 			Window win = new Window ("Button Tester");
 			win.DefaultWidth = 200;
 			win.DefaultHeight = 150;
-			win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			Button btn = new Button ("Click Me");
 			btn.Clicked += new EventHandler (btn_click);
 			win.Add (btn);

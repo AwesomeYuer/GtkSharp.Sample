@@ -477,7 +477,7 @@ public class TestDnd {
 		Gtk.Application.Init ();
 
 		window = new Gtk.Window (Gtk.WindowType.Toplevel);
-		window.DeleteEvent += new DeleteEventHandler (OnDelete);
+		//window.DeleteEvent += new DeleteEventHandler (OnDelete);
 
 		table = new Table (2, 2, false);
 		window.Add (table);

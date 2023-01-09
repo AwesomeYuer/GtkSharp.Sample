@@ -22,7 +22,7 @@ namespace GtkSamples {
 		{
 			Application.Init ();
 			Gtk.Window win = new Gtk.Window ("Gtk# Hello World");
-			win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			msg = new Label ("Click to quit");
 			but = new Button (msg);
 			but.Clicked += delegate { thr.Abort (); Application.Quit (); };

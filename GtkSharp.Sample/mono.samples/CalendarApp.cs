@@ -26,7 +26,7 @@ namespace GtkSamples {
 			Window win = new Window ("Calendar Tester");
 			win.DefaultWidth = 200;
 			win.DefaultHeight = 150;
-			win.DeleteEvent += new DeleteEventHandler (Window_Delete);
+			//win.DeleteEvent += new DeleteEventHandler (Window_Delete);
 			Calendar cal = CreateCalendar();
 			cal.DaySelected += new EventHandler (DaySelected);
 			win.Add (cal);

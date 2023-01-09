@@ -32,7 +32,7 @@ namespace GtkSamples {
 		{
 			Application.Init ();
 			Gtk.Window win = new Gtk.Window ("Scribble");
-			win.DeleteEvent += delegate { Application.Quit (); };
+			//win.DeleteEvent += delegate { Application.Quit (); };
 			win.BorderWidth = 8;
 			Frame frm = new Frame (null);
 			frm.ShadowType = ShadowType.In;
