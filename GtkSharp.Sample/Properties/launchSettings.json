@@ -3,9 +3,9 @@
     "GtkSharp.Sample": {
       "commandName": "Project"
     },
-    "WSL": {
+    "WSL2@Ubuntu-22.04.2-LTS-2023-06-27": {
       "commandName": "WSL2",
-      "distributionName": ""
+      "distributionName": "Ubuntu-22.04.2-LTS-2023-06-27"
     }
   }
 }
